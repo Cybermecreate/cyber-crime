@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybercrime Statistics Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Cybercrime Investigation Guide</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: #f4f4f4;
+            margin: 0;
             padding: 20px;
+            text-align: center;
         }
         .container {
             max-width: 900px;
@@ -20,46 +20,59 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        canvas {
-            margin-top: 20px;
+        h1 {
+            color: #333;
+        }
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Cybercrime Statistics Dashboard</h2>
-        <h3>Africa vs South Africa</h3>
-        <canvas id="cybercrimeChart"></canvas>
-    </div>
+        <h1>Cybercrime Investigation Guide</h1>
+        <p>Guiding officers on how to use OSINT for cybercrime investigations.</p>
 
-    <script>
-        const ctx = document.getElementById('cybercrimeChart').getContext('2d');
-        const cybercrimeChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Phishing', 'Ransomware', 'Identity Theft', 'Financial Fraud', 'Hacking'],
-                datasets: [
-                    {
-                        label: 'Africa',
-                        data: [75, 60, 50, 80, 65],
-                        backgroundColor: 'rgba(54, 162, 235, 0.6)'
-                    },
-                    {
-                        label: 'South Africa',
-                        data: [85, 70, 55, 90, 75],
-                        backgroundColor: 'rgba(255, 99, 132, 0.6)'
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
+        <h2>Steps to Investigate Cybercrime</h2>
+        <ul>
+            <li>Identify and assess the cybercrime incident.</li>
+            <li>Collect and preserve digital evidence.</li>
+            <li>Use OSINT tools to gather intelligence.</li>
+            <li>Analyze and correlate data for insights.</li>
+            <li>Report findings and take necessary legal actions.</li>
+        </ul>
+
+        <h2>Recommended OSINT Tools</h2>
+        <ul>
+            <li><a href="https://www.shodan.io/" target="_blank">Shodan - Internet Device Search</a></li>
+            <li><a href="https://www.virustotal.com/" target="_blank">VirusTotal - File and URL Analysis</a></li>
+            <li><a href="https://osintframework.com/" target="_blank">OSINT Framework - Collection of Tools</a></li>
+            <li><a href="https://haveibeenpwned.com/" target="_blank">Have I Been Pwned - Breach Lookup</a></li>
+            <li><a href="https://www.spiderfoot.net/" target="_blank">SpiderFoot - OSINT Automation</a></li>
+        </ul>
+
+        <h2>Educational Resources</h2>
+        <ul>
+            <li><a href="https://www.coursera.org/courses?query=cybersecurity" target="_blank">Cybersecurity Courses on Coursera</a></li>
+            <li><a href="https://www.sans.org/" target="_blank">SANS Institute - Cybersecurity Training</a></li>
+            <li><a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity Framework</a></li>
+        </ul>
+
+        <h2>Investigation Advice</h2>
+        <p>Always validate information from multiple sources. Maintain chain of custody for digital evidence. Stay updated with the latest OSINT techniques and cybersecurity trends.</p>
+    </div>
 </body>
 </html>
